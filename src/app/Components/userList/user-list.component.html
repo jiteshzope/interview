@@ -1,0 +1,36 @@
+<div *ngFor="let user of users | async">
+
+    <div *ngIf="getIfToDisplay(user.name)">
+
+        <p>Name : {{user.name}}</p>
+        <p>Email : {{user.email}}</p>
+        <p>Id : {{user.id}}</p>
+        <p>phone : {{user.phone}}</p>
+        <p>username : {{user.username}}</p>
+        <p>website : {{user.website}}</p>
+        <p>phone : {{user.phone}}</p>
+        <p>phone : {{user.phone}}</p>
+
+        <div>
+            <p>Company details :</p>
+            <p>bs : {{user.company.bs}}</p>
+            <p>catchPhrase : {{user.company.catchPhrase}}</p>
+            <p>company name : {{user.company.name}}</p>
+        </div>
+
+        <div>
+            <p>Adress details :</p>
+            <p>city : {{user.address.city}}</p>
+            <p>street : {{user.address.street}}</p>
+            <p>suite : {{user.address.suite}}</p>
+            <p>zipcode : {{user.address.zipcode}}</p>
+
+
+        </div>
+
+    </div>
+
+    <hr>
+    <hr>
+
+</div>
